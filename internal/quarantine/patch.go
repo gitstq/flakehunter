@@ -20,7 +20,7 @@ func PatchSnippet(fp, suite, name, framework string) string {
 	case "jest", "vitest":
 		return fmt.Sprintf("// %s\nit.skip(\"%s\", () => {\n  // quarantined by flakehunter\n});", fp, name)
 	case "junit", "maven":
-		return fmt.Sprintf("// %s\n@org.junit.jupiter.api.Disabled(\"flakehunter: quarantined flaky test\")", fp)
+		return fmt.Sprintf("// %s\nimport org.junit.jupiter.api.Disabled;\n\n@Disabled(\"flakehunter: quarantined flaky test\")", fp)
 	case "xunit":
 		return fmt.Sprintf("// %s\n[Fact(Skip = \"flakehunter: quarantined flaky test\")]", fp)
 	default:
