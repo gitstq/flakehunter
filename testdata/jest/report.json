@@ -1,0 +1,36 @@
+{
+  "numFailedTests": 1,
+  "numPassedTests": 1,
+  "numPendingTests": 1,
+  "numTotalTests": 3,
+  "testResults": [
+    {
+      "name": "/app/src/math.test.js",
+      "status": "failed",
+      "assertionResults": [
+        {
+          "ancestorTitles": ["math"],
+          "title": "adds",
+          "fullName": "math adds",
+          "status": "passed",
+          "duration": 2
+        },
+        {
+          "ancestorTitles": ["math"],
+          "title": "subtracts",
+          "fullName": "math subtracts",
+          "status": "failed",
+          "duration": 3,
+          "failureMessages": ["expected 1 to equal 2"]
+        },
+        {
+          "ancestorTitles": ["math"],
+          "title": "pending thing",
+          "fullName": "math pending thing",
+          "status": "pending",
+          "duration": null
+        }
+      ]
+    }
+  ]
+}

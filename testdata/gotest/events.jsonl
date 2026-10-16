@@ -1,0 +1,8 @@
+{"Time":"2026-10-16T10:00:00.100000Z","Action":"run","Package":"github.com/gitstq/flakehunter/internal/engine","Test":"TestAnalyze"}
+{"Time":"2026-10-16T10:00:00.200000Z","Action":"output","Package":"github.com/gitstq/flakehunter/internal/engine","Test":"TestAnalyze","Output":"=== RUN   TestAnalyze\n"}
+{"Time":"2026-10-16T10:00:00.300000Z","Action":"pass","Package":"github.com/gitstq/flakehunter/internal/engine","Test":"TestAnalyze","Elapsed":0.01}
+{"Time":"2026-10-16T10:00:00.400000Z","Action":"run","Package":"github.com/gitstq/flakehunter/internal/ingest","Test":"TestParseJUnit"}
+{"Time":"2026-10-16T10:00:00.500000Z","Action":"fail","Package":"github.com/gitstq/flakehunter/internal/ingest","Test":"TestParseJUnit","Elapsed":0.02}
+{"Time":"2026-10-16T10:00:00.600000Z","Action":"run","Package":"github.com/gitstq/flakehunter/internal/model","Test":"TestFingerprint"}
+{"Time":"2026-10-16T10:00:00.700000Z","Action":"skip","Package":"github.com/gitstq/flakehunter/internal/model","Test":"TestFingerprint","Elapsed":0}
+{"Time":"2026-10-16T10:00:00.800000Z","Action":"pass","Package":"github.com/gitstq/flakehunter","Test":""}

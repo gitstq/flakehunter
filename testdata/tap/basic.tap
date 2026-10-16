@@ -1,0 +1,6 @@
+TAP version 13
+1..4
+ok 1 - adds numbers correctly
+not ok 2 - divides by zero
+ok 3 - network reachable # SKIP sandbox has no network
+not ok 4 - future feature # TODO not implemented yet
