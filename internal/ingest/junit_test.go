@@ -44,8 +44,8 @@ func TestParseJUnitMixed(t *testing.T) {
 		if r.Outcome != c.outcome {
 			t.Errorf("%s: want outcome %s, got %s", c.fp, c.outcome, r.Outcome)
 		}
-		if r.Rerun != c.rerun {
-			t.Errorf("%s: want rerun=%v, got %v", c.fp, c.rerun, r.Rerun)
+		if r.Retried != c.rerun {
+			t.Errorf("%s: want rerun=%v, got %v", c.fp, c.rerun, r.Retried)
 		}
 	}
 	// Duration is converted from seconds to milliseconds.
